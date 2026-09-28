@@ -4,8 +4,6 @@
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-3.0-000000?logo=flask&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-ready-2496ED?logo=docker&logoColor=white)
-![License](https://img.shields.io/badge/license-MIT-green)
-
 A hands-on lab that shows how Kubernetes **recovers from failures automatically** and **scales horizontally under load**. It uses a real Flask app, real health probes, a real Horizontal Pod Autoscaler (HPA), and real failure injection. Built with Python (Flask), Docker, Kubernetes, and kind.
 
 ---
@@ -68,7 +66,7 @@ graph LR
 
 - **Application**: Python 3.12, Flask 3.0
 - **Containerization**: Docker (non-root image, exec-form CMD)
-- **Orchestration**: Kubernetes 1.29 (kind cluster)
+- **Orchestration**: Kubernetes (kind cluster)
 - **Autoscaling**: Horizontal Pod Autoscaler + metrics-server
 - **Load Generation**: busybox pod
 - **Scripting**: Bash
@@ -123,7 +121,7 @@ The 8-second readiness delay simulates real-world slow startup (database connect
 ### Prerequisites
 
 - Docker
-- [kind](https://kind.sigs.k8s.io/docs/user/quick-start/#installation) (minikube or MicroK8s also work)
+- [minikube](https://minikube.sigs.k8s.io/docs/start/) (kind or MicroK8s also work)
 - [kubectl](https://kubernetes.io/docs/tasks/tools/)
 - At least 8 GB RAM
 
